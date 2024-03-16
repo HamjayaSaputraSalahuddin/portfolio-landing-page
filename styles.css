@@ -77,33 +77,44 @@ main section .section-content {
     margin-top: 2rem;
 }
 
-main section .section-content .section-content-circle {
+main section .section-content .section-content-left {
+    width: 100%;
+    height: 100%;
+    /* margin-right: 5rem; */
+    position: relative;
+    /* border: 1px solid black; */
+}
+main section .section-content .section-content-right {
+    width: 100%;
+    height: 100%;
+    /* margin-right: 5rem; */
+    border: 1px solid black;
+
+}
+
+main section .section-content .section-content-left  .section-content-circle {
     width: 18rem;
     height: 18rem;
     background-color: #00aaff;
-    position: relative;
-    top: 7rem;
+    margin-top: 7rem;
     border-radius: 0% 85% 0% 2%;
+    position: absolute;
 }
 
-main section .section-content .section-content-image {
-    width: 50%;
-    height: 50%;
+main section .section-content .section-content-left .section-content-image {
+    width: 100%;
     position: absolute;
+
 }
-main section .section-content .section-content-image img{
-    width: 25rem;
-    height: 25rem;
+main section .section-content .section-content-left .section-content-image img{
+    width: 50%;
+    margin-top: 91px;
     position: absolute;
-    top: 0;
-    left: -3rem;
 }
 
 main section .section-content .section-content-text {
-    width: 40%;
-    height: 40%;
-    padding: 5rem;
-    margin: 5rem 5rem;
+    width: 50%;
+    margin: 10rem 0 0 8rem;
 }
 
 main section .section-content .section-content-text p {
@@ -123,4 +134,9 @@ main section .section-content .section-content-text span::before, main section .
     content: "\a";
     white-space: pre;
     word-break: break-all;
+}
+
+main section .section-content .section-content-button {
+    width: 20rem;
+    margin: 1rem 8rem;
 }
