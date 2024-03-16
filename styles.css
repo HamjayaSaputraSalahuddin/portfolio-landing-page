@@ -48,7 +48,7 @@ header nav ul a li {
 
 header nav ul a li:hover {
     color: #00aaff;
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 header .contact-btn-wrapper a {
@@ -107,7 +107,6 @@ main section .section-content .section-content-left .section-content-image {
 main section .section-content .section-content-left .section-content-image img{
     width: 55%;
     margin-top: 60px;
-    position: absolute;
 }
 
 main section .section-content .section-content-text {
