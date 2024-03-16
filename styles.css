@@ -79,16 +79,14 @@ main section .section-content {
 
 main section .section-content .section-content-left {
     width: 100%;
-    height: 100%;
     /* margin-right: 5rem; */
     position: relative;
     /* border: 1px solid black; */
 }
 main section .section-content .section-content-right {
     width: 100%;
-    height: 100%;
     /* margin-right: 5rem; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 
@@ -107,13 +105,13 @@ main section .section-content .section-content-left .section-content-image {
 
 }
 main section .section-content .section-content-left .section-content-image img{
-    width: 50%;
-    margin-top: 91px;
+    width: 55%;
+    margin-top: 60px;
     position: absolute;
 }
 
 main section .section-content .section-content-text {
-    width: 50%;
+    width: 300px;
     margin: 10rem 0 0 8rem;
 }
 
@@ -138,5 +136,24 @@ main section .section-content .section-content-text span::before, main section .
 
 main section .section-content .section-content-button {
     width: 20rem;
-    margin: 1rem 8rem;
+    margin: 1rem 0 0 8rem;
+}
+
+main section .section-content .section-content-button button {
+    background-color:  #00aaff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #ffff;
+}
+
+main section .section-content .section-content-button button:hover {
+    transform: scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+}
+
+main section .section-content .section-content-button button a {
+    text-decoration: none;
+    color: white;
 }
