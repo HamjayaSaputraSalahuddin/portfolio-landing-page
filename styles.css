@@ -90,7 +90,7 @@ main section .section-content .section-content-right {
 
 }
 
-main section .section-content .section-content-left  .section-content-circle {
+main section .section-content .section-content-left .section-content-circle {
     width: 18rem;
     height: 18rem;
     background-color: #00aaff;
@@ -109,18 +109,18 @@ main section .section-content .section-content-left .section-content-image img{
     margin-top: 60px;
 }
 
-main section .section-content .section-content-text {
+main section .section-content .section-content-right .section-content-text {
     width: 300px;
     margin: 10rem 0 0 8rem;
 }
 
-main section .section-content .section-content-text p {
+main section .section-content .section-content-right .section-content-text p {
     color: #808286;
     font-size: 18px;
     line-height: 2rem;
 }
 
-main section .section-content .section-content-text span {
+main section .section-content .section-content-right .section-content-text span {
     font-weight: 600;
     font-size: 25px;
     color: #2c2727;
@@ -155,4 +155,54 @@ main section .section-content .section-content-button button:hover {
 main section .section-content .section-content-button button a {
     text-decoration: none;
     color: white;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width : 990px) {
+    header .contact-btn-wrapper a {
+        padding: 10px 10px;
+    }
+
+    header nav ul a {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width : 780px) {
+
+    header nav ul, .contact-btn-wrapper {
+        display: none;
+    }
+
+    main section .section-content {
+        width: 40%;
+    }
+
+    main section .section-content .section-content-left {
+        width: 50%;
+    }
+
+    main section .section-content .section-content-right {
+        width: 50%;
+        margin-left: 12rem;
+    }
+
+    main section .section-content .section-content-left .section-content-circle {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    main section .section-content .section-content-left .section-content-image {
+        width: 25rem;
+        margin-top: 42px;
+    }
+
+    main section .section-content .section-content-right .section-content-text p {
+        font-size: 18px;
+    }
+
+    main section .section-content .section-content-right .section-content-text span {
+        font-size: 20px;
+    }
 }
